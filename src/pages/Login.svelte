@@ -30,7 +30,7 @@
 
       if (response.ok) {
         setAuth(data.access_token, data.user);
-        alert('Login berhasil!');
+        window.location.hash = '#/home';
       } else {
         errorMessage = data.message || 'Login gagal. Silakan periksa kredensial Anda.';
       }
